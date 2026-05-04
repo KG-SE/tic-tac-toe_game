@@ -20,7 +20,7 @@ A simple Tic Tac Toe game built using HTML, CSS, and JavaScript.
 - CSS
 - JavaScript
 
-## 📸 Screenshots
+## 📸 Screenshot
 
 ### 🟢 Play Game Screen
 ![Win](./screenshots/play.png)
