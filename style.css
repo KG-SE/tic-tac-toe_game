@@ -79,3 +79,64 @@ h1 {
 .msg-container.hide {
     display: none;
 }
+
+/* Tablets */
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .player-inputs input {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .boxes {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .box {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        font-size: 1.8rem;
+    }
+
+    #start-btn, #reset-btn, #new-btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    .player-inputs input {
+        font-size: 0.9rem;
+    }
+
+    .box {
+        font-size: 1.5rem;
+    }
+
+    #start-btn, #reset-btn, #new-btn {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
