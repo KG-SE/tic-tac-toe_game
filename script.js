@@ -12,6 +12,7 @@ let msg_container = document.querySelector(".msg-container");
 let sms = document.querySelector("#sms");
 
 let turnO = true; //Player X , player O
+let gameStart = false;
 let count = 0; //To Track Draw
 let winning_pattern = [
     [0,1,2],
@@ -25,6 +26,7 @@ let winning_pattern = [
 ];
 
 startBtn.addEventListener("click", () => {
+    gameStart = true;
     player1Name = player1Input.value || "Player 1";
     player2Name = player2Input.value || "Player 2";
 
@@ -42,6 +44,7 @@ const resetGame=()=>{
 
 boxes.forEach((box)=>{
     box.addEventListener("click",()=>{
+        if(!gameStart) return
         if(turnO) //Player O
         {
             box.innerText = "O"
@@ -73,6 +76,23 @@ const disable_boxes=()=>{
         box.disabled = true
     }
 };
+
+new_btn.addEventListener("click",()=>{
+    newGame()
+})
+
+const newGame=()=>{
+    gameStart = false
+    turnO = true
+    count = 0
+    enable_boxes()
+    document.querySelector(".player-inputs").style.display = "block"
+    player1Name = "Player 1"
+    player2Name = "Player 2"
+    player1Input.value = ""
+    player2Input.value = ""
+    msg_container.classList.add("hide")
+    };
 
 const enable_boxes=()=>{
     for (const box of boxes) {
@@ -110,5 +130,4 @@ let check_Winner=()=>{
     return false
 };
 
-new_btn.addEventListener("click",(resetGame));
 reset_btn.addEventListener("click",(resetGame));
