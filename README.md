@@ -31,8 +31,18 @@ script.js
 screenshots/
 ```
 
+This projects helped me improved my concepts of JavaScript (ES6) & skills of frontend development.
+
 ## 👨‍💻 Author
 🔗**Kashan Ghori
 https://github.com/KG-SE
 
-This projects helped me improved my concepts of JavaScript (ES6) & skills of frontend development.
+---
+
+## 🤝 Connect with Me
+
+Feel free to connect with me on LinkedIn and check out my projects!
+
+---
+
+⭐ If you like this project, don't forget to star the repository!
